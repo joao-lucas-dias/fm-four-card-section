@@ -6,7 +6,16 @@
 		<!-- displays site properly based on user's device -->
 
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-		<link rel="stylesheet" href="/node_modules/normalize.css/normalize.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
 
 		<script src="https://cdn.tailwindcss.com"></script>
 
@@ -15,49 +24,85 @@
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 		<style>
 			.attribution {
-				font-size: 11px;
+				font-size: 13px;
 				text-align: center;
 			}
 			.attribution a {
-				color: hsl(228, 45%, 44%);
+				color: blue;
+				text-decoration: underline;
 			}
 		</style>
 	</head>
-	<body>
-		<main>
-			<div>
-				<h1>Reliable, efficient delivery</h1>
-				<h2>Powered by Technology</h2>
-				<p>
+	<body
+		class="grid min-h-screen place-content-center bg-[#fafafa] px-8 pt-[84px]"
+		style="font-family: 'Poppins', sans-serif"
+	>
+		<main class="grid grid-flow-row place-items-center gap-[75px] lg:gap-16">
+			<div class="text-center">
+				<h1 class="mb-1 text-2xl font-extralight lg:text-4xl">
+					Reliable, efficient delivery
+				</h1>
+				<h2 class="mb-4 text-2xl font-semibold text-gray-700 lg:text-4xl">
+					Powered by Technology
+				</h2>
+				<p class="max-w-[55ch] text-base font-normal tracking-tight text-gray-400">
 					Our Artificial Intelligence powered tools use millions of project data points to
 					ensure that your project is successful
 				</p>
 			</div>
-			<div>
-				<div>
-					<h3>Supervisor</h3>
-					<p>Monitors activity to identify project roadblocks</p>
-					<img src="" alt="" />
+			<div class="grid grid-flow-row justify-items-center gap-6 lg:grid-cols-3">
+				<div
+					class="flex max-w-fit flex-col rounded-md border-t-4 border-[#45d3d3] bg-white p-7 shadow-xl lg:col-span-1 lg:row-span-2 lg:self-center"
+				>
+					<h3 class="mb-1 text-xl font-bold text-gray-700">Supervisor</h3>
+					<p class="mb-8 max-w-[35ch] text-[13px] leading-6 text-gray-400">
+						Monitors activity to identify project roadblocks
+					</p>
+					<img
+						src="./images/icon-supervisor.svg"
+						alt=""
+						class="aspect-square w-14 self-end"
+					/>
 				</div>
-				<div>
-					<h3>Team Builder</h3>
-					<p>Scans our talent network to create the optimal team for your project</p>
-					<img src="" alt="" />
+				<div
+					class="flex max-w-fit flex-col rounded-md border-t-4 border-[#ea5353] bg-white p-7 shadow-xl lg:col-span-1"
+				>
+					<h3 class="mb-1 text-xl font-bold text-gray-700">Team Builder</h3>
+					<p class="mb-8 max-w-[35ch] text-[13px] leading-6 text-gray-400">
+						Scans our talent network to create the optimal team for your project
+					</p>
+					<img
+						src="./images/icon-team-builder.svg"
+						alt=""
+						class="aspect-square w-14 self-end"
+					/>
 				</div>
-				<div>
-					<h3>Karma</h3>
-					<p>Regularly evaluates our talent to ensure quality</p>
-					<img src="" alt="" />
+				<div
+					class="flex max-w-fit flex-col rounded-md border-t-4 border-[#fcaf4a] bg-white p-7 shadow-xl"
+				>
+					<h3 class="mb-1 text-xl font-bold text-gray-700">Karma</h3>
+					<p class="mb-8 max-w-[35ch] text-[13px] leading-6 text-gray-400">
+						Regularly evaluates our talent to ensure quality
+					</p>
+					<img src="./images/icon-karma.svg" alt="" class="aspect-square w-14 self-end" />
 				</div>
-				<div>
-					<h3>Calculator</h3>
-					<p>Uses data from past projects to provide better delivery estimates</p>
-					<img src="" alt="" />
+				<div
+					class="flex max-w-fit flex-col rounded-md border-t-4 border-[#549ef2] bg-white p-7 shadow-xl lg:col-start-3 lg:row-span-2 lg:row-start-1 lg:self-center"
+				>
+					<h3 class="mb-1 text-xl font-bold text-gray-700">Calculator</h3>
+					<p class="mb-8 max-w-[35ch] text-[13px] leading-6 text-gray-400">
+						Uses data from past projects to provide better delivery estimates
+					</p>
+					<img
+						src="./images/icon-calculator.svg"
+						alt=""
+						class="aspect-square w-14 self-end"
+					/>
 				</div>
 			</div>
 		</main>
 
-		<footer>
+		<footer class="mt-8">
 			<p class="attribution">
 				Challenge by
 				<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
